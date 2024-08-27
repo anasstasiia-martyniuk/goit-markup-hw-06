@@ -208,15 +208,34 @@
           <h2 class="our-team-title">Our Team</h2>
           <ul class="our-team-list">
             <li class="our-team-list-item">
-              <img
-                src="./images/mark-guerrero(1).jpg"
-                srcset="
-                  ./images/mark-guerrero(1).jpg    1x,
-                  ./images/mark-guerrero(1)@2x.jpg 2x
-                "
-                alt="Mark's photo"
-                width="264"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/mark-guerrero(1).jpg    1x,
+                    ./images/mark-guerrero(1)@2x.jpg 2x
+                  "
+                  media="min-width:1158px"
+                />
+                <source
+                  srcset="
+                    ./images/mark-guerrero(1).jpg    1x,
+                    ./images/mark-guerrero(1)@2x.jpg 2x
+                  "
+                  media="min-width:768px"
+                />
+                <source
+                  srcset="
+                    ./images/mark-guerrero(1).jpg    1x,
+                    ./images/mark-guerrero(1)@2x.jpg 2x
+                  "
+                  media="max-width:767px"
+                />
+                <img
+                  src="./images/mark-guerrero(1).jpg"
+                  alt="Mark's photo"
+                  width="264"
+                />
+              </picture>
               <div class="our-team-information">
                 <h3 class="our-team-names">Mark Guerrero</h3>
                 <p class="our-team-position">Product Designer</p>
@@ -610,7 +629,7 @@
     <!-- #endregion /footer -->
     <!-- #region modal -->
 
-    <div class="modal-overlay hidden">
+    <div class="modal-overlay">
       <div class="modal">
         <button type="button" class="close-button-modal">
           <svg class="modal-icon" width="8" height="8">
