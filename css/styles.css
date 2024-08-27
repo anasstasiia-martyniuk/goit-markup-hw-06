@@ -443,7 +443,7 @@ header .container {
         background-image: linear-gradient(to bottom,
                 rgba(46, 47, 66, 0.7),
                 rgba(46, 47, 66, 0.7)),
-                url('../images/people-office@2x.jpg');
+            url('../images/people-office@2x.jpg');
     }
 }
 
@@ -714,6 +714,10 @@ header .container {
 .logo-footer span {
     color: #f4f4fd;
 }
+.footer-information{
+    margin-bottom: 72px;
+}
+
 .page-footer-text {
     font-weight: 400;
     font-size: 16px;
@@ -721,7 +725,6 @@ header .container {
     letter-spacing: 0.02em;
     color: #f4f4fd;
     width: 264px;
-    margin-bottom: 72px;
 }
 .social-media-text {
     font-weight: 500;
@@ -730,6 +733,9 @@ header .container {
     letter-spacing: 0.02em;
     color: #FFFFFF;
     max-width: 264px;
+}
+.social-media-container {
+    margin-bottom: 72px;
 }
 .social-media-text {
     margin-bottom: 16px;
@@ -741,7 +747,6 @@ header .container {
     justify-content: center;
     flex-direction: row;
     gap: 16px;
-    margin-bottom: 72px;
 }
 .page-footer .icon a:hover,
 .page-footer .icon a:focus {
@@ -812,7 +817,7 @@ header .container {
 @media screen and (min-width:768px) {
     .page-footer .container {
        flex-direction: column;
-       padding-left: 108px;
+       width: 584px;
     }
    .footer-text-and-icons {
       display: flex;
@@ -841,12 +846,17 @@ header .container {
        flex-direction: row;
        align-items: baseline;
        padding: 0;
+       width: 1440px;
     }
     .page-footer {
     padding: 100px 0;
     }
-    .footer-information {
+    .footer-information{
         margin-right: 120px;
+        margin-bottom: 0;
+    }
+    .social-media-container{
+        margin-bottom: 0;
     }
     .footer-subscribe {
         margin-left: 80px;
